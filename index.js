@@ -34,7 +34,7 @@ app.get("/news", (req, res) => {
 app.get("/news/:id", (req, res) => {
    const id = req.params.id;
    const newsId = news.find((n) => n._id === id);
-   console.log(id);
+
    res.send(newsId);
 });
 
